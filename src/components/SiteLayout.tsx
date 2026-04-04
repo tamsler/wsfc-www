@@ -30,6 +30,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
 
       <header className="site-header" role="banner">
         <NavLink to="/" className="club-logo">
+          <img src="/wsfc.webp" alt="West Sacramento FC" className="club-logo-img" />
           WEST SAC FC
         </NavLink>
 

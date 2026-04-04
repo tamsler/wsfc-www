@@ -97,6 +97,15 @@ a {
   color: var(--primary);
   font-size: 1.3rem;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.club-logo-img {
+  height: 2rem;
+  width: auto;
+  display: block;
 }
 
 .site-nav {
@@ -647,6 +656,23 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+/* ── Affiliates ─────────────────────────────────── */
+
+.affiliates-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.affiliate-logo {
+  height: 4.5rem;
+  width: auto;
+  display: block;
+  opacity: 0.85;
 }
 
 /* ── Embed ──────────────────────────────────────── */

@@ -126,6 +126,15 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Affiliates */}
+      <section aria-label="League affiliations">
+        <h3 className="section-heading">Affiliations</h3>
+        <div className="affiliates-row">
+          <img src="/us-club-soccer.webp" alt="US Club Soccer" className="affiliate-logo" />
+          <img src="/NORCAL_Logo.webp" alt="NorCal Premier Soccer" className="affiliate-logo" />
+        </div>
+      </section>
     </>
   );
 }

@@ -122,7 +122,7 @@ export default function FeesPage() {
         <div className="prep-section">
           <div className="prep-item">
             <div className="prep-icon">
-              <span className="material-symbols-outlined">groups</span>
+              <span className="material-symbols-outlined">paid</span>
             </div>
             <div>
               <h4>$350 – $550 per year</h4>
@@ -144,7 +144,7 @@ export default function FeesPage() {
           <div className="prep-list">
             <div className="prep-item">
               <div className="prep-icon">
-                <span className="material-symbols-outlined">checkroom</span>
+                <span className="material-symbols-outlined">apparel</span>
               </div>
               <div>
                 <h4>Purchased Separately — ~$120 + shipping</h4>

@@ -12,7 +12,7 @@
 - **Age Groups:** [US Club Soccer age group chart](https://usclubsoccer.org/registration-player-age-groups)
 - **Arrival Time:** Arrive at least 20 minutes early for check-in and warm-ups
 - **What to Bring:** Shin guards, soccer cleats, and plenty of water
-- **Questions:** doc@westsaccompsoccer.org
+- **Questions:** doc@westsacramentofc.org
 
 ### Planning Tips
 

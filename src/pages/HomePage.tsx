@@ -7,6 +7,7 @@ const quickLinks = [
   { to: "/coaches", label: "Coaches", icon: "groups" },
   { to: "/code-of-conduct", label: "Code of Conduct", icon: "gavel" },
   { to: "/fields", label: "Fields", icon: "location_on" },
+  { to: "/about", label: "About", icon: "info" },
 ];
 
 const whyItems = [

@@ -72,7 +72,7 @@ export default function TryoutsPage() {
           >
             2026 Tryouts Registration
           </a>
-          <a className="button-secondary" href="mailto:doc@westsaccompsoccer.org">
+          <a className="button-secondary" href="mailto:doc@westsacramentofc.org">
             Questions? Email Us
           </a>
         </div>

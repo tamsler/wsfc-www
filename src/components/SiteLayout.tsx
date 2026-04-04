@@ -8,6 +8,7 @@ const navItems = [
   { to: "/coaches", label: "Coaches" },
   { to: "/code-of-conduct", label: "Code of Conduct" },
   { to: "/fields", label: "Fields" },
+  { to: "/about", label: "About" },
 ];
 
 const bottomNavItems = [
@@ -30,8 +31,12 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
 
       <header className="site-header" role="banner">
         <NavLink to="/" className="club-logo">
-          <img src="/wsfc.webp" alt="West Sacramento FC" className="club-logo-img" />
-          WEST SAC FC
+          <img
+            src="/wsfc.webp"
+            alt="West Sacramento FC"
+            className="club-logo-img"
+          />
+          WEST SACRAMENTO FC
         </NavLink>
 
         <nav aria-label="Main navigation" className="site-nav">
@@ -55,12 +60,6 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
       </main>
 
       <footer className="site-footer">
-        <p>West Sacramento Futbol Club</p>
-        <p>
-          <a href="mailto:doc@westsaccompsoccer.org">
-            doc@westsaccompsoccer.org
-          </a>
-        </p>
         <p>&copy; 2026 West Sacramento Futbol Club</p>
       </footer>
 

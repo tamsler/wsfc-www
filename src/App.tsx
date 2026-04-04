@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import SiteLayout from "./components/SiteLayout";
+import AboutPage from "./pages/AboutPage";
 import CoachesPage from "./pages/CoachesPage";
 import CodeOfConductPage from "./pages/CodeOfConductPage";
 import FeesPage from "./pages/FeesPage";
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/fees" element={<FeesPage />} />
         <Route path="/coaches" element={<CoachesPage />} />
         <Route path="/code-of-conduct" element={<CodeOfConductPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/fields" element={<FieldsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

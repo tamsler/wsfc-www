@@ -556,6 +556,12 @@ a {
   line-height: 1.25;
 }
 
+.coach-role {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--on-surface-variant);
+}
+
 .coach-team {
   display: flex;
   align-items: center;

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e5e2e1",
+                    "primary": "#ba0c00",
+                    "on-primary-fixed": "#400100",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "on-primary-container": "#fffbff",
+                    "surface-tint": "#be0c00",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#dae2ff",
+                    "secondary-fixed-dim": "#b1c5ff",
+                    "secondary": "#2e5ab5",
+                    "surface-bright": "#fcf9f8",
+                    "on-tertiary-container": "#fffbff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "on-secondary-container": "#00327f",
+                    "on-secondary-fixed-variant": "#06419c",
+                    "on-surface": "#1b1b1b",
+                    "on-secondary-fixed": "#001946",
+                    "inverse-on-surface": "#f3f0ef",
+                    "primary-container": "#e02a16",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#cbc5c5",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-dim": "#dcd9d9",
+                    "background": "#fcf9f8",
+                    "tertiary-container": "#787373",
+                    "primary-fixed": "#ffdad4",
+                    "primary-fixed-dim": "#ffb4a7",
+                    "on-tertiary-fixed-variant": "#494646",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#e7e1e1",
+                    "outline": "#916f69",
+                    "on-background": "#1b1b1b",
+                    "inverse-primary": "#ffb4a7",
+                    "surface-container-high": "#eae7e7",
+                    "tertiary": "#5f5b5b",
+                    "on-tertiary-fixed": "#1d1b1b",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-surface-variant": "#5d3f3a",
+                    "outline-variant": "#e6bdb6",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#920700",
+                    "secondary-container": "#779efd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .asymmetric-bleed {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f8]/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-sm shadow-[#ba0c00]/5 flex justify-between items-center px-6 py-4">
+<div class="text-xl font-black italic tracking-tighter text-[#ba0c00] dark:text-[#ff3b2d]">WEST SAC FC</div>
+<div class="flex items-center gap-4">
+<button class="text-stone-600 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-32">
+<!-- Hero Section: Asymmetric Bleed -->
+<section class="relative h-[442px] overflow-hidden asymmetric-bleed bg-primary">
+<img alt="Elite soccer player training" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="Dynamic close-up of a soccer player's feet controlling a ball on lush green grass during intense training at dawn with dramatic backlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwslH9_Z3pYe0jVA0vDYKNS3HWzapM5ZBnNZ77vpRFhAh9tzBjJGsqL7L9jVt2xLJVL8nyy31NjQXNcnPwcGfYHOAaSfLWrUm0bQHyZdho03JxWJGtr1pZH8wcicResXY_3Tt2FsRAwMH_un1Z1kS-9omkwvfCyJzdRhVyPjacgOtPoS_7rKh7tMCXcx3WngIq0MtvdXK7EunqwGguxwED45geGp12OpoWWpxq6MH2NazJ_b63tBo6yu3n8vTk_dyjIKBeBeAgacrZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="relative h-full flex flex-col justify-end px-6 pb-16">
+<span class="font-headline font-black italic text-white/50 tracking-widest text-sm mb-2">TRYOUTS 2026</span>
+<h1 class="font-headline font-bold text-5xl text-white leading-none tracking-tight">JOIN THE<br/>ELITE.</h1>
+</div>
+</section>
+<!-- CTA Fixed (Mobile Only Experience) -->
+<div class="fixed bottom-24 left-0 w-full px-6 z-40 md:hidden">
+<button class="w-full bg-primary text-white py-5 rounded-xl font-headline font-bold text-lg shadow-xl shadow-primary/20 flex items-center justify-center gap-3 active:scale-95 transition-transform">
+                REGISTER NOW
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Dates Bento Grid -->
+<section class="px-6 -mt-8 relative z-10">
+<div class="grid grid-cols-1 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="font-label text-[10px] font-bold tracking-widest text-secondary uppercase mb-1">Session One</p>
+<h2 class="font-headline font-bold text-2xl text-on-surface">U09 - U14</h2>
+</div>
+<div class="bg-secondary-container/20 text-secondary px-3 py-1 rounded-full text-[10px] font-bold tracking-widest">YOUTH</div>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant mb-4">
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+<span class="font-medium">MAY 12 - 14, 2026</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="font-medium">5:30 PM — 7:30 PM</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="font-label text-[10px] font-bold tracking-widest text-secondary uppercase mb-1">Session Two</p>
+<h2 class="font-headline font-bold text-2xl text-on-surface">U15 - U19</h2>
+</div>
+<div class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-[10px] font-bold tracking-widest">SENIOR</div>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant mb-4">
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+<span class="font-medium">MAY 19 - 21, 2026</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="font-medium">7:45 PM — 9:45 PM</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Requirements Section: Tonal Layering -->
+<section class="mt-12 bg-surface-container-low py-12 px-6">
+<h3 class="font-headline font-bold text-xl mb-8 flex items-center gap-3">
+<span class="w-8 h-1 bg-primary"></span>
+                PREPARATION
+            </h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-surface-container-highest rounded-xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">shield</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Mandatory Gear</h4>
+<p class="text-on-surface-variant text-sm mt-1 leading-relaxed">Shinguards and appropriate cleats are strictly required for all participants.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-surface-container-highest rounded-xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">water_full</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Hydration</h4>
+<p class="text-on-surface-variant text-sm mt-1 leading-relaxed">Bring a labeled water bottle. Water stations will be available for refills.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-surface-container-highest rounded-xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">description</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Digital Waiver</h4>
+<p class="text-on-surface-variant text-sm mt-1 leading-relaxed">Ensure your registration and medical waiver are completed online prior to arrival.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Coaching Staff: Horizontal Scroll -->
+<section class="mt-12 px-6">
+<h3 class="font-headline font-bold text-xl mb-6">COACHING STAFF</h3>
+<div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar">
+<div class="flex-shrink-0 w-64 bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/10">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant">
+<img alt="Coach Profile" class="w-full h-full object-cover" data-alt="Professional portrait of a male soccer coach in athletic gear with a confident and approachable expression, soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-Nr4iMX4g7E280t6I-ziK1uTz8FWgRSW197NJfC1_Rh7gA7hlNGCI11T0sV1kExA4WLGTTiO8V_u4njE7Ta84xjQgkBW329zIHt0MaCkR9bahblDsAamwoAIkklEyjsZOPIXZtGz7sLVQLTnYPkPLCf-7Pa2vJxqpZJrtBK4YQSOc6tb4g0E-Yif_8g2R4izhhdvh5JvvwWCey6E9eFnU7hG0GEPFkNHfLu3okE2wP83HrloxuPAmQqAoDC84nEwvCfliDb4aZ58d"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">MARCUS RIVERA</p>
+<p class="text-xs text-secondary font-medium uppercase tracking-widest">Director of Coaching</p>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container-high rounded-lg text-xs font-bold text-on-surface flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+                        CONTACT COACH
+                    </button>
+</div>
+<div class="flex-shrink-0 w-64 bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/10">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-variant">
+<img alt="Coach Profile" class="w-full h-full object-cover" data-alt="Professional portrait of a female soccer coach with athletic headband, looking focused and determined, blurred stadium background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv-TMS0J6Nl9ZWoo23IVSsww97eOA8EsyxwBq2soPHouPnTrOje-1UcRcFxQnKbXjxsMzEGXQ7lIwlKUF5t3lB-nGwBk9AdEmLjMxHPE4XlEXwRTEQwie-RfMvAX7BWbAVVv0AoAb00sOcS70O4gu-RgpwVkW4pnNgByJwMafsxGkfnceHK6GInwYHgQ70zB-34hHaQy6D4MNzplqtLSHwh7yMztiDqMvpX2XBzrgO6e195EurhES1J6YlZCgw9zaZPGz9gudciewA"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">SARAH JENKINS</p>
+<p class="text-xs text-secondary font-medium uppercase tracking-widest">Academy Lead</p>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container-high rounded-lg text-xs font-bold text-on-surface flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+                        CONTACT COACH
+                    </button>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="mt-8 px-6">
+<div class="rounded-2xl overflow-hidden relative h-48 bg-surface-variant">
+<img alt="Training Grounds" class="w-full h-full object-cover" data-alt="Aerial view of professional grade soccer fields with perfectly manicured grass and bright stadium lights, cinematic perspective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPFJtxiMjsVvDDXAeaa-pgVZiNtt5bNlfAVy78Um8HeyogAoMy9XpE4gsEO8eCgWfaokezY2LsWGPZx-mtfsz8rPRVs14wOihlQrnBRz70am-mv_eUqKZEc65X4shlD0vh57JJawtCyhG8WU352WvqFVB35aRwPj83wPzUVb0Aa_b8p7sMlXDqnrmkerOOTui5B3D8OTohE71Zm_aFGTnBoi5yU6cfkLZigM222T02XK3CRNyxyZ91J8XRmHrD2L4fqjNbt-0t0w7d"/>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur p-3 rounded-xl shadow-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-bold text-xs">RIVER WALK PARK</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider">West Sacramento, CA</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-[#fcf9f8]/70 dark:bg-stone-900/70 backdrop-blur-xl rounded-t-xl shadow-[0_-4px_20px_0_rgba(186,12,0,0.04)] flex justify-around items-center px-4 pb-safe pt-2">
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 px-3 py-1" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[10px] font-bold tracking-widest uppercase">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 px-3 py-1" href="#">
+<span class="material-symbols-outlined">sports_soccer</span>
+<span class="font-['Inter'] text-[10px] font-bold tracking-widest uppercase">MATCHES</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 px-3 py-1" href="#">
+<span class="material-symbols-outlined">newspaper</span>
+<span class="font-['Inter'] text-[10px] font-bold tracking-widest uppercase">NEWS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ba0c00] dark:text-[#ff3b2d] bg-[#ba0c00]/10 rounded-xl px-3 py-1 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-['Inter'] text-[10px] font-bold tracking-widest uppercase">TRYOUTS</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-12 px-6 flex flex-col items-center gap-6 text-center">
+<p class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-stone-400">© 2024 WEST SACRAMENTO FUTBOL CLUB</p>
+<div class="flex gap-4">
+<a class="text-stone-400 font-['Inter'] text-xs uppercase tracking-widest hover:text-[#ba0c00] transition-colors" href="#">Privacy</a>
+<a class="text-stone-400 font-['Inter'] text-xs uppercase tracking-widest hover:text-[#ba0c00] transition-colors" href="#">Terms</a>
+<a class="text-stone-400 font-['Inter'] text-xs uppercase tracking-widest hover:text-[#ba0c00] transition-colors" href="#">Sponsors</a>
+</div>
+</footer>
+</body></html>

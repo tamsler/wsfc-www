@@ -10,39 +10,43 @@ const navItems = [
   { to: "/fields", label: "Fields" },
 ];
 
+const bottomNavItems = [
+  { to: "/", label: "Home", icon: "home", end: true },
+  { to: "/tryouts", label: "Tryouts", icon: "campaign" },
+  { to: "/coaches", label: "Coaches", icon: "groups" },
+  { to: "/fees", label: "Fees", icon: "payments" },
+];
+
 type SiteLayoutProps = {
   children: ReactNode;
 };
 
 export default function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <div className="site-shell">
+    <>
       <a className="skip-link" href="#main-content">
         Skip to main content
       </a>
 
       <header className="site-header" role="banner">
-        <div className="site-header-inner">
-          <div>
-            <p className="club-kicker">West Sacramento Soccer Club</p>
-            <h1 className="club-title">Competitive Program</h1>
-          </div>
+        <NavLink to="/" className="club-logo">
+          WEST SAC FC
+        </NavLink>
 
-          <nav aria-label="Main navigation" className="site-nav">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                end={item.end}
-                className={({ isActive }) =>
-                  isActive ? "nav-link nav-link-active" : "nav-link"
-                }
-              >
-                {item.label}
-              </NavLink>
-            ))}
-          </nav>
-        </div>
+        <nav aria-label="Main navigation" className="site-nav">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              end={item.end}
+              className={({ isActive }) =>
+                isActive ? "nav-link nav-link-active" : "nav-link"
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </nav>
       </header>
 
       <main id="main-content" className="site-main">
@@ -50,9 +54,32 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
       </main>
 
       <footer className="site-footer">
-        <p>West Sacramento Soccer Club</p>
-        <p>Questions: doc@westsaccompsoccer.org</p>
+        <p>West Sacramento Futbol Club</p>
+        <p>
+          <a href="mailto:doc@westsaccompsoccer.org">
+            doc@westsaccompsoccer.org
+          </a>
+        </p>
+        <p>&copy; 2026 West Sacramento Futbol Club</p>
       </footer>
-    </div>
+
+      <nav aria-label="Mobile navigation" className="bottom-nav">
+        {bottomNavItems.map((item) => (
+          <NavLink
+            key={item.to}
+            to={item.to}
+            end={item.end}
+            className={({ isActive }) =>
+              isActive
+                ? "bottom-nav-item bottom-nav-item--active"
+                : "bottom-nav-item"
+            }
+          >
+            <span className="material-symbols-outlined">{item.icon}</span>
+            <span className="bottom-nav-label">{item.label}</span>
+          </NavLink>
+        ))}
+      </nav>
+    </>
   );
 }

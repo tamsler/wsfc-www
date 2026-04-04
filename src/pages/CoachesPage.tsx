@@ -6,14 +6,26 @@ export default function CoachesPage() {
     <>
       <PageMeta
         title="Coaches"
-        description="2025/2026 season coaching roster for West Sacramento Soccer Club competitive teams."
+        description="2025/2026 season coaching roster for West Sacramento FC competitive teams."
       />
-      <section className="content-card" aria-labelledby="page-title">
-        <header className="content-card-header">
-          <h2 id="page-title">Coaches</h2>
-          <p>2025 / 2026 Season &mdash; Competitive Program Coaching Roster</p>
-        </header>
 
+      {/* Hero */}
+      <section className="hero" aria-labelledby="coaches-title">
+        <p className="hero-eyebrow">2025 / 2026 Season</p>
+        <h2 id="coaches-title">
+          Coaching
+          <br />
+          Staff.
+        </h2>
+        <p>
+          Experienced coaches across girls and boys teams from U09 through
+          U19 — committed to development, competition, and community.
+        </p>
+      </section>
+
+      {/* Roster */}
+      <section aria-label="Coaching roster">
+        <h3 className="section-heading">Coaching Roster</h3>
         <div className="coach-grid">
           {coaches.map((coach) => (
             <article key={coach.name} className="coach-card">
@@ -31,7 +43,6 @@ export default function CoachesPage() {
             </article>
           ))}
         </div>
-
         <p className="coach-note">
           Coaching assignments may be adjusted before the season begins.
           Updated team placement and coaching information will be communicated

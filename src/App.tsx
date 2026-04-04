@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import SiteLayout from "./components/SiteLayout";
 import AboutPage from "./pages/AboutPage";
 import CoachesPage from "./pages/CoachesPage";
@@ -12,6 +13,7 @@ import TryoutsPage from "./pages/TryoutsPage";
 export default function App() {
   return (
     <SiteLayout>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<Navigate to="/" replace />} />

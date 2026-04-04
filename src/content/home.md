@@ -1,6 +1,6 @@
 ## Program Snapshot
 
-West Sacramento Soccer Club Competitive Program supports long-term player development with age-appropriate training, experienced coaching, and a strong team-first culture.
+West Sacramento Futbol Club Competitive Program supports long-term player development with age-appropriate training, experienced coaching, and a strong team-first culture.
 
 ### Why Families Choose WSFC
 

@@ -1,6 +1,6 @@
-# West Sacramento Soccer Club Website
+# West Sacramento Futbol Club Website
 
-Modern React website for the West Sacramento Soccer Club Competitive Program.
+Modern React website for the West Sacramento Futbol Club Competitive Program.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution workflow, TypeScript conventions, and PR quality checks.
 

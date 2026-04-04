@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_NAME = "West Sacramento Soccer Club";
+const SITE_NAME = "West Sacramento Futbol Club";
 
 type PageMetaProps = {
   title: string;

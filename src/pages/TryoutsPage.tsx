@@ -64,7 +64,15 @@ export default function TryoutsPage() {
           early and come prepared to compete.
         </p>
         <div className="hero-actions">
-          <a className="button-primary" href="mailto:doc@westsaccompsoccer.org">
+          <a
+            className="button-primary"
+            href="https://westsaccompsoccer.byga.net/tryouts/460xkgbu42/signup"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2026 Tryouts Registration
+          </a>
+          <a className="button-secondary" href="mailto:doc@westsaccompsoccer.org">
             Questions? Email Us
           </a>
         </div>

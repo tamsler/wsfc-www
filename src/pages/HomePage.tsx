@@ -16,7 +16,7 @@ const whyItems = [
     body: "U09 through U19 — structured development from youth through pre-collegiate.",
   },
   {
-    icon: "community",
+    icon: "groups",
     title: "Community Roots",
     body: "Local training environment with deep West Sacramento ties and strong team culture.",
   },

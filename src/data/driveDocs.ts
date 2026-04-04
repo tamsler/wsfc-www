@@ -5,11 +5,11 @@ type DriveDoc = {
 
 export const DRIVE_DOCS = {
   codeOfConduct: {
-    id: "1_z_H80D6WsOsUS5Q6-h8V5aTqeo91Lpw",
+    id: "17DjhUhomMCUxk3U0p3zsMmxdLlcfYCMf",
     title: "Code of Conduct",
   },
   fields: {
-    id: "1C24ZsISeBF7leDNlBdNVWnSpZkhBG7Sp",
+    id: "1Wn3mzJJpefclEU0DVCNCGP08R6tar474",
     title: "Fields",
   },
 } satisfies Record<string, DriveDoc>;

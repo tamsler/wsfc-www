@@ -186,6 +186,16 @@ npm run preview   # Preview production build locally
 
 Always run `npm run build` before considering work done. TypeScript errors and lint errors are CI blockers.
 
+## Icons
+
+Icons use [Material Symbols Outlined](https://fonts.google.com/icons) loaded via Google Fonts. Browse and search icons at that URL — filter by "Material Symbols" style and select "Outlined".
+
+Usage:
+
+```tsx
+<span className="material-symbols-outlined">icon_name</span>
+```
+
 ## Deployment
 
 Cloudflare Pages deploys automatically on push to `main`. The `public/_redirects` file ensures all paths serve `index.html` for client-side routing. Build output is `dist/`.

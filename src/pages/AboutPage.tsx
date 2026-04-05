@@ -1,21 +1,6 @@
 import PageMeta from "../components/PageMeta";
 
-type BoardMember = {
-  role: string;
-  name: string;
-};
-
-const boardMembers: BoardMember[] = [
-  { role: "President", name: "Richard Novoa" },
-  { role: "Vice President", name: "Guillermo Villegas, Jr." },
-  { role: "Secretary", name: "Yolanda Villegas" },
-  { role: "Treasurer", name: "My Huynh" },
-  { role: "Registrar", name: "Cristina Lopez" },
-] satisfies BoardMember[];
-
-const technicalStaff: BoardMember[] = [
-  { role: "Director of Coaching", name: "Thomas Amsler" },
-] satisfies BoardMember[];
+import { boardMembers, technicalStaff } from "../data/board";
 
 export default function AboutPage() {
   return (
@@ -40,12 +25,12 @@ export default function AboutPage() {
 
       {/* Board of Directors */}
       <section aria-labelledby="board-heading">
-        <h3 id="board-heading" className="section-heading">Board of Directors</h3>
-        <div className="coach-grid">
+        <h3 id="board-heading" className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Board of Directors</h3>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[0.65rem] mb-4">
           {boardMembers.map((member) => (
-            <article key={member.role} className="coach-card">
-              <p className="coach-name">{member.name}</p>
-              <p className="coach-role">{member.role}</p>
+            <article key={member.role} className="bg-surface-low rounded-xl py-3.5 px-4 grid gap-[0.45rem]">
+              <p className="m-0 font-bold text-[0.95rem] leading-tight">{member.name}</p>
+              <p className="m-0 text-[0.85rem] text-on-surface-variant">{member.role}</p>
             </article>
           ))}
         </div>
@@ -53,12 +38,12 @@ export default function AboutPage() {
 
       {/* Technical Staff */}
       <section aria-labelledby="technical-heading">
-        <h3 id="technical-heading" className="section-heading">Director of Coaching</h3>
-        <div className="coach-grid">
+        <h3 id="technical-heading" className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Director of Coaching</h3>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[0.65rem] mb-4">
           {technicalStaff.map((member) => (
-            <article key={member.role} className="coach-card">
-              <p className="coach-name">{member.name}</p>
-              <p className="coach-role">{member.role}</p>
+            <article key={member.role} className="bg-surface-low rounded-xl py-3.5 px-4 grid gap-[0.45rem]">
+              <p className="m-0 font-bold text-[0.95rem] leading-tight">{member.name}</p>
+              <p className="m-0 text-[0.85rem] text-on-surface-variant">{member.role}</p>
             </article>
           ))}
         </div>
@@ -66,8 +51,8 @@ export default function AboutPage() {
 
       {/* Contact */}
       <section aria-labelledby="contact-heading">
-        <h3 id="contact-heading" className="section-heading">Contact</h3>
-        <div className="coach-card" style={{ display: "inline-flex", gap: "0.5rem", alignItems: "center" }}>
+        <h3 id="contact-heading" className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Contact</h3>
+        <div className="bg-surface-low rounded-xl py-3.5 px-4 inline-flex gap-2 items-center">
           <span className="material-symbols-outlined">mail</span>
           <a href="mailto:doc@westsacramentofc.org">doc@westsacramentofc.org</a>
         </div>

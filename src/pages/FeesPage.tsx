@@ -41,24 +41,21 @@ export default function FeesPage() {
 
       {/* Registration fee */}
       <section aria-label="Registration fee">
-        <h3 className="section-heading">Club Registration</h3>
-        <div
-          className="session-card"
-          style={{ background: "var(--surface-container-lowest)" }}
-        >
-          <div className="session-card-top">
+        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Club Registration</h3>
+        <div className="bg-surface-lowest rounded-2xl p-5 grid gap-4">
+          <div className="flex justify-between items-start">
             <div>
-              <p className="session-label">2025 / 2026 Season</p>
-              <h3 className="session-title" style={{ fontSize: "2.5rem" }}>
+              <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-secondary m-0 mb-1">2025 / 2026 Season</p>
+              <h3 className="m-0 font-display font-bold text-[2.5rem] tracking-[-0.02em]">
                 $330
               </h3>
             </div>
-            <span className="session-chip session-chip--youth">Per Player</span>
+            <span className="text-[0.6rem] font-bold uppercase tracking-[0.08em] px-[0.6rem] py-[0.2rem] rounded-full whitespace-nowrap bg-secondary/10 text-secondary">Per Player</span>
           </div>
-          <div style={{ display: "grid", gap: "0.65rem" }}>
+          <div className="grid gap-[0.65rem]">
             {included.map((item) => (
-              <div key={item.text} className="session-detail">
-                <span className="material-symbols-outlined">{item.icon}</span>
+              <div key={item.text} className="flex items-center gap-3 text-on-surface-variant text-[0.875rem] font-medium">
+                <span className="material-symbols-outlined text-primary text-[1.1rem] shrink-0">{item.icon}</span>
                 {item.text}
               </div>
             ))}
@@ -68,47 +65,42 @@ export default function FeesPage() {
 
       {/* Payment options */}
       <section aria-label="Payment options">
-        <h3 className="section-heading">Payment Options</h3>
-        <div className="session-grid">
+        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Payment Options</h3>
+        <div className="grid gap-3 sm:grid-cols-2">
           {/* Pay in full */}
-          <div className="session-card">
-            <div className="session-card-top">
+          <div className="bg-surface-lowest rounded-2xl p-5 grid gap-4">
+            <div className="flex justify-between items-start">
               <div>
-                <p className="session-label">Option 1</p>
-                <h3 className="session-title">Pay in Full</h3>
+                <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-secondary m-0 mb-1">Option 1</p>
+                <h3 className="m-0 font-display font-bold text-2xl tracking-[-0.02em]">Pay in Full</h3>
               </div>
-              <span className="session-chip session-chip--youth">Simplest</span>
+              <span className="text-[0.6rem] font-bold uppercase tracking-[0.08em] px-[0.6rem] py-[0.2rem] rounded-full whitespace-nowrap bg-secondary/10 text-secondary">Simplest</span>
             </div>
-            <div className="session-detail">
-              <span className="material-symbols-outlined">payments</span>
-              One payment of <strong>$330</strong> at registration
+            <div className="flex items-center gap-3 text-on-surface-variant text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1.1rem] shrink-0">payments</span>
+              <span>One payment of <strong>$330</strong> at registration</span>
             </div>
           </div>
 
           {/* Payment plan */}
-          <div className="session-card">
-            <div className="session-card-top">
+          <div className="bg-surface-lowest rounded-2xl p-5 grid gap-4">
+            <div className="flex justify-between items-start">
               <div>
-                <p className="session-label">Option 2</p>
-                <h3 className="session-title">Payment Plan</h3>
+                <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-secondary m-0 mb-1">Option 2</p>
+                <h3 className="m-0 font-display font-bold text-2xl tracking-[-0.02em]">Payment Plan</h3>
               </div>
-              <span className="session-chip session-chip--senior">6 Payments</span>
+              <span className="text-[0.6rem] font-bold uppercase tracking-[0.08em] px-[0.6rem] py-[0.2rem] rounded-full whitespace-nowrap bg-primary-fixed text-on-primary-fixed-variant">6 Payments</span>
             </div>
-            <div style={{ display: "grid", gap: "0.45rem" }}>
+            <div className="grid gap-[0.45rem]">
               {paymentPlan.map((p) => (
                 <div
                   key={p.due}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    fontSize: "0.85rem",
-                  }}
+                  className="flex justify-between items-center text-[0.85rem]"
                 >
-                  <span style={{ color: "var(--on-surface-variant)" }}>
+                  <span className="text-on-surface-variant">
                     {p.due}
                   </span>
-                  <span style={{ fontWeight: 700 }}>{p.amount}</span>
+                  <span className="font-bold">{p.amount}</span>
                 </div>
               ))}
             </div>
@@ -118,15 +110,15 @@ export default function FeesPage() {
 
       {/* Team fee */}
       <section aria-label="Team fee">
-        <h3 className="section-heading">Team Fee</h3>
-        <div className="prep-section">
-          <div className="prep-item">
-            <div className="prep-icon">
-              <span className="material-symbols-outlined">paid</span>
+        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Team Fee</h3>
+        <div className="bg-surface-low rounded-2xl p-5 md:p-7">
+          <div className="flex items-start gap-4">
+            <div className="w-11 h-11 bg-surface-highest rounded-xl flex items-center justify-center shrink-0">
+              <span className="material-symbols-outlined text-primary text-[1.2rem]">paid</span>
             </div>
             <div>
-              <h4>$350 – $550 per year</h4>
-              <p>
+              <h4 className="m-0 mb-1 font-bold text-[0.9rem]">$350 – $550 per year</h4>
+              <p className="m-0 text-[0.825rem] text-on-surface-variant leading-relaxed">
                 In addition to club registration, each team typically collects a
                 team fee to cover league entries, State Cup referees,
                 tournaments, team equipment, and other team-specific costs.
@@ -139,29 +131,29 @@ export default function FeesPage() {
 
       {/* Uniform */}
       <section aria-label="Uniform">
-        <h3 className="section-heading">Uniform Kit</h3>
-        <div className="prep-section">
-          <div className="prep-list">
-            <div className="prep-item">
-              <div className="prep-icon">
-                <span className="material-symbols-outlined">apparel</span>
+        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Uniform Kit</h3>
+        <div className="bg-surface-low rounded-2xl p-5 md:p-7">
+          <div className="grid gap-5">
+            <div className="flex items-start gap-4">
+              <div className="w-11 h-11 bg-surface-highest rounded-xl flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-primary text-[1.2rem]">apparel</span>
               </div>
               <div>
-                <h4>Purchased Separately — ~$120 + shipping</h4>
-                <p>
+                <h4 className="m-0 mb-1 font-bold text-[0.9rem]">Purchased Separately — ~$120 + shipping</h4>
+                <p className="m-0 text-[0.825rem] text-on-surface-variant leading-relaxed">
                   The uniform kit is not included in the registration fee.
                   Typical kit includes three jerseys, two shorts, and two pairs
                   of socks.
                 </p>
               </div>
             </div>
-            <div className="prep-item">
-              <div className="prep-icon">
-                <span className="material-symbols-outlined">info</span>
+            <div className="flex items-start gap-4">
+              <div className="w-11 h-11 bg-surface-highest rounded-xl flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-primary text-[1.2rem]">info</span>
               </div>
               <div>
-                <h4>Ordering Details</h4>
-                <p>
+                <h4 className="m-0 mb-1 font-bold text-[0.9rem]">Ordering Details</h4>
+                <p className="m-0 text-[0.825rem] text-on-surface-variant leading-relaxed">
                   Uniform ordering instructions will be communicated to
                   registered families before the season begins.
                 </p>

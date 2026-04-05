@@ -63,10 +63,10 @@ export default function HomePage() {
         </div>
 
         <div className="hero-actions">
-          <Link className="button-primary" to="/tryouts">
+          <Link className="inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white text-primary shadow-md hover:-translate-y-px hover:shadow-lg transition-all" to="/tryouts">
             Tryout Details
           </Link>
-          <Link className="button-secondary" to="/fees">
+          <Link className="inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white/15 text-white hover:bg-white/25 transition-colors" to="/fees">
             Program Fees
           </Link>
         </div>
@@ -74,37 +74,18 @@ export default function HomePage() {
 
       {/* Why WSFC */}
       <section aria-label="Why choose West Sacramento FC">
-        <h3 className="section-heading">Why Families Choose WSFC</h3>
-        <div
-          style={{
-            display: "grid",
-            gap: "0.65rem",
-            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-          }}
-        >
+        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Why Families Choose WSFC</h3>
+        <div className="grid gap-[0.65rem] grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
           {whyItems.map((item) => (
-            <div key={item.title} className="quick-link-card" style={{ gap: "0.65rem" }}>
-              <div className="quick-link-icon">
+            <div key={item.title} className="bg-surface-low rounded-2xl p-4 text-on-surface flex flex-col gap-2.5 transition-colors hover:bg-surface">
+              <div className="w-9 h-9 bg-primary/8 rounded-xl flex items-center justify-center text-primary text-[1.1rem]">
                 <span className="material-symbols-outlined">{item.icon}</span>
               </div>
               <div>
-                <p
-                  style={{
-                    margin: "0 0 0.2rem",
-                    fontWeight: 700,
-                    fontSize: "0.85rem",
-                  }}
-                >
+                <p className="m-0 mb-1 font-bold text-[0.85rem]">
                   {item.title}
                 </p>
-                <p
-                  style={{
-                    margin: 0,
-                    fontSize: "0.8rem",
-                    color: "var(--on-surface-variant)",
-                    lineHeight: 1.5,
-                  }}
-                >
+                <p className="m-0 text-[0.8rem] text-on-surface-variant leading-relaxed">
                   {item.body}
                 </p>
               </div>
@@ -115,14 +96,14 @@ export default function HomePage() {
 
       {/* Quick links */}
       <section aria-label="Quick links">
-        <h3 className="section-heading">Quick Access</h3>
-        <div className="quick-links-grid">
+        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Quick Access</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
           {quickLinks.map((link) => (
-            <Link key={link.to} to={link.to} className="quick-link-card">
-              <div className="quick-link-icon">
+            <Link key={link.to} to={link.to} className="bg-surface-low rounded-2xl p-4 no-underline text-on-surface flex flex-col gap-2 transition-colors hover:bg-surface">
+              <div className="w-9 h-9 bg-primary/8 rounded-xl flex items-center justify-center text-primary text-[1.1rem]">
                 <span className="material-symbols-outlined">{link.icon}</span>
               </div>
-              <span className="label">{link.label}</span>
+              <span className="text-[0.75rem] font-bold uppercase tracking-wider text-on-surface">{link.label}</span>
             </Link>
           ))}
         </div>
@@ -130,10 +111,10 @@ export default function HomePage() {
 
       {/* Affiliates */}
       <section aria-label="League affiliations">
-        <h3 className="section-heading">Affiliations</h3>
-        <div className="affiliates-row">
-          <img src="/us-club-soccer.webp" alt="US Club Soccer" className="affiliate-logo" />
-          <img src="/NORCAL_Logo.webp" alt="NorCal Premier Soccer" className="affiliate-logo" />
+        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Affiliations</h3>
+        <div className="flex items-center justify-center gap-8 flex-wrap">
+          <img src="/us-club-soccer.webp" alt="US Club Soccer" className="h-[4.5rem] w-auto block opacity-85" />
+          <img src="/NORCAL_Logo.webp" alt="NorCal Premier Soccer" className="h-[4.5rem] w-auto block opacity-85" />
         </div>
       </section>
     </>

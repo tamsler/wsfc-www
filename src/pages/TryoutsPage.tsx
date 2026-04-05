@@ -54,25 +54,25 @@ export default function TryoutsPage() {
       {/* Hero */}
       <section className="hero" aria-labelledby="tryouts-title">
         <p className="hero-eyebrow">Tryouts 2026</p>
-        <h2 id="tryouts-title">
+        <h1 id="tryouts-title">
           Join
           <br />
           Our Club.
-        </h2>
+        </h1>
         <p>
           Girls and boys from U09 through U19. Two tryout windows — register
           early and come prepared to compete.
         </p>
         <div className="hero-actions">
           <a
-            className="inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white text-primary shadow-md hover:-translate-y-px hover:shadow-lg transition-all"
+            className="btn-hero-primary"
             href="https://westsaccompsoccer.byga.net/tryouts/460xkgbu42/signup"
             target="_blank"
             rel="noopener noreferrer"
           >
             2026 Tryouts Registration
           </a>
-          <a className="inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white/15 text-white hover:bg-white/25 transition-colors" href="mailto:doc@westsacramentofc.org">
+          <a className="btn-hero-ghost" href="mailto:doc@westsacramentofc.org">
             Questions? Email Us
           </a>
         </div>
@@ -80,7 +80,7 @@ export default function TryoutsPage() {
 
       {/* Session cards */}
       <section aria-label="Tryout sessions">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Tryout Windows</h3>
+        <h3 className="section-heading">Tryout Windows</h3>
         <div className="grid gap-3 sm:grid-cols-2">
           {sessions.map((s) => (
             <div key={s.label} className="bg-surface-lowest rounded-2xl p-5 grid gap-4">
@@ -119,7 +119,7 @@ export default function TryoutsPage() {
 
       {/* Location */}
       <section aria-label="Tryout location">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Location</h3>
+        <h3 className="section-heading">Location</h3>
         <div className="bg-surface-lowest rounded-2xl p-5 flex items-center gap-4">
           <div className="w-12 h-12 bg-primary/8 rounded-xl flex items-center justify-center shrink-0">
             <span className="material-symbols-outlined text-primary text-[1.3rem]">location_on</span>
@@ -134,7 +134,7 @@ export default function TryoutsPage() {
       {/* Preparation */}
       <section aria-label="Tryout preparation">
         <div className="bg-surface-low rounded-2xl p-5 md:p-7">
-          <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Preparation</h3>
+          <h3 className="section-heading">Preparation</h3>
           <div className="grid gap-5">
             {prepItems.map((item) => (
               <div key={item.title} className="flex items-start gap-4">
@@ -153,7 +153,7 @@ export default function TryoutsPage() {
 
       {/* Coaching staff link */}
       <section aria-label="Coaching staff">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Coaching Staff</h3>
+        <h3 className="section-heading">Coaching Staff</h3>
         <div className="bg-surface-lowest rounded-2xl p-5 flex items-center gap-4">
           <div className="w-12 h-12 bg-primary/8 rounded-xl flex items-center justify-center shrink-0">
             <span className="material-symbols-outlined text-primary text-[1.3rem]">groups</span>

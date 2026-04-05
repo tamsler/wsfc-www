@@ -28,11 +28,11 @@ export default function FeesPage() {
       {/* Hero */}
       <section className="hero" aria-labelledby="fees-title">
         <p className="hero-eyebrow">2025 / 2026 Season</p>
-        <h2 id="fees-title">
+        <h1 id="fees-title">
           Program
           <br />
           Fees.
-        </h2>
+        </h1>
         <p>
           Transparent pricing for the competitive season — registration,
           payment plans, team costs, and uniform details.
@@ -41,7 +41,7 @@ export default function FeesPage() {
 
       {/* Registration fee */}
       <section aria-label="Registration fee">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Club Registration</h3>
+        <h3 className="section-heading">Club Registration</h3>
         <div className="bg-surface-lowest rounded-2xl p-5 grid gap-4">
           <div className="flex justify-between items-start">
             <div>
@@ -65,7 +65,7 @@ export default function FeesPage() {
 
       {/* Payment options */}
       <section aria-label="Payment options">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Payment Options</h3>
+        <h3 className="section-heading">Payment Options</h3>
         <div className="grid gap-3 sm:grid-cols-2">
           {/* Pay in full */}
           <div className="bg-surface-lowest rounded-2xl p-5 grid gap-4">
@@ -110,7 +110,7 @@ export default function FeesPage() {
 
       {/* Team fee */}
       <section aria-label="Team fee">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Team Fee</h3>
+        <h3 className="section-heading">Team Fee</h3>
         <div className="bg-surface-low rounded-2xl p-5 md:p-7">
           <div className="flex items-start gap-4">
             <div className="w-11 h-11 bg-surface-highest rounded-xl flex items-center justify-center shrink-0">
@@ -131,7 +131,7 @@ export default function FeesPage() {
 
       {/* Uniform */}
       <section aria-label="Uniform">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Uniform Kit</h3>
+        <h3 className="section-heading">Uniform Kit</h3>
         <div className="bg-surface-low rounded-2xl p-5 md:p-7">
           <div className="grid gap-5">
             <div className="flex items-start gap-4">

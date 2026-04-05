@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.westsaccompsoccer.org/</loc>
+    <loc>https://westsacramentofc.org/</loc>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
-    <loc>https://www.westsaccompsoccer.org/tryouts</loc>
+    <loc>https://westsacramentofc.org/tryouts</loc>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
-    <loc>https://www.westsaccompsoccer.org/fees</loc>
+    <loc>https://westsacramentofc.org/fees</loc>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
-    <loc>https://www.westsaccompsoccer.org/coaches</loc>
+    <loc>https://westsacramentofc.org/coaches</loc>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
-    <loc>https://www.westsaccompsoccer.org/code-of-conduct</loc>
+    <loc>https://westsacramentofc.org/code-of-conduct</loc>
+    <lastmod>2026-04-05</lastmod>
   </url>
   <url>
-    <loc>https://www.westsaccompsoccer.org/fields</loc>
+    <loc>https://westsacramentofc.org/fields</loc>
+    <lastmod>2026-04-05</lastmod>
+  </url>
+  <url>
+    <loc>https://westsacramentofc.org/about</loc>
+    <lastmod>2026-04-05</lastmod>
   </url>
 </urlset>

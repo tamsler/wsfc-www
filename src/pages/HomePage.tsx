@@ -39,13 +39,13 @@ export default function HomePage() {
       {/* Hero */}
       <section className="hero" aria-labelledby="hero-title">
         <p className="hero-eyebrow">2026 Competitive Season</p>
-        <h2 id="hero-title">
+        <h1 id="hero-title">
           Develop.
           <br />
           Compete.
           <br />
           Represent.
-        </h2>
+        </h1>
         <p>
           Join one of the region&apos;s most community-driven competitive
           soccer programs for boys and girls U09 through U19.
@@ -63,10 +63,10 @@ export default function HomePage() {
         </div>
 
         <div className="hero-actions">
-          <Link className="inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white text-primary shadow-md hover:-translate-y-px hover:shadow-lg transition-all" to="/tryouts">
+          <Link className="btn-hero-primary" to="/tryouts">
             Tryout Details
           </Link>
-          <Link className="inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white/15 text-white hover:bg-white/25 transition-colors" to="/fees">
+          <Link className="btn-hero-ghost" to="/fees">
             Program Fees
           </Link>
         </div>
@@ -74,7 +74,7 @@ export default function HomePage() {
 
       {/* Why WSFC */}
       <section aria-label="Why choose West Sacramento FC">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Why Families Choose WSFC</h3>
+        <h3 className="section-heading">Why Families Choose WSFC</h3>
         <div className="grid gap-[0.65rem] grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
           {whyItems.map((item) => (
             <div key={item.title} className="bg-surface-low rounded-2xl p-4 text-on-surface flex flex-col gap-2.5 transition-colors hover:bg-surface">
@@ -96,7 +96,7 @@ export default function HomePage() {
 
       {/* Quick links */}
       <section aria-label="Quick links">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Quick Access</h3>
+        <h3 className="section-heading">Quick Access</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
           {quickLinks.map((link) => (
             <Link key={link.to} to={link.to} className="bg-surface-low rounded-2xl p-4 no-underline text-on-surface flex flex-col gap-2 transition-colors hover:bg-surface">
@@ -111,10 +111,10 @@ export default function HomePage() {
 
       {/* Affiliates */}
       <section aria-label="League affiliations">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Affiliations</h3>
+        <h3 className="section-heading">Affiliations</h3>
         <div className="flex items-center justify-center gap-8 flex-wrap">
-          <img src="/us-club-soccer.webp" alt="US Club Soccer" className="h-[4.5rem] w-auto block opacity-85" />
-          <img src="/NORCAL_Logo.webp" alt="NorCal Premier Soccer" className="h-[4.5rem] w-auto block opacity-85" />
+          <img src="/us-club-soccer.webp" alt="US Club Soccer" className="h-[4.5rem] w-auto block opacity-85" loading="lazy" />
+          <img src="/norcal.webp" alt="NorCal Premier Soccer" className="h-[4.5rem] w-auto block opacity-85" loading="lazy" />
         </div>
       </section>
     </>

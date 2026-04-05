@@ -36,7 +36,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
             alt="West Sacramento FC"
             className="h-8 w-auto block"
           />
-          <h1 className="m-0 text-[1.3rem]">WEST SACRAMENTO FC</h1>
+          <span className="m-0 text-[1.3rem]">WEST SACRAMENTO FC</span>
         </NavLink>
 
         <nav aria-label="Main navigation" className="hidden md:flex gap-1 items-center">

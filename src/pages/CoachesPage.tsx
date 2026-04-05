@@ -12,11 +12,11 @@ export default function CoachesPage() {
       {/* Hero */}
       <section className="hero" aria-labelledby="coaches-title">
         <p className="hero-eyebrow">2025 / 2026 Season</p>
-        <h2 id="coaches-title">
+        <h1 id="coaches-title">
           Coaching
           <br />
           Staff.
-        </h2>
+        </h1>
         <p>
           Experienced coaches across girls and boys teams from U09 through
           U19 — committed to development, competition, and community.
@@ -25,10 +25,10 @@ export default function CoachesPage() {
 
       {/* Roster */}
       <section aria-label="Coaching roster">
-        <h3 className="font-display font-bold text-lg tracking-[-0.01em] uppercase flex items-center gap-3 mb-4 after:content-[''] after:flex-1 after:h-[2px] after:bg-primary/10">Coaching Roster</h3>
+        <h3 className="section-heading">Coaching Roster</h3>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[0.65rem] mb-4">
           {coaches.map((coach) => (
-            <article key={coach.name} className="bg-surface-low rounded-xl py-3.5 px-4 grid gap-[0.45rem]">
+            <article key={`${coach.name}-${coach.year}-${coach.gender}`} className="bg-surface-low rounded-xl py-3.5 px-4 grid gap-[0.45rem]">
               <p className="m-0 font-bold text-[0.95rem] leading-tight">{coach.name}</p>
               <div className="flex items-center gap-[0.45rem]">
                 <span

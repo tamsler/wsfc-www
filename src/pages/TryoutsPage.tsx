@@ -57,7 +57,7 @@ export default function TryoutsPage() {
         <h2 id="tryouts-title">
           Join
           <br />
-          The Elite.
+          Our Club.
         </h2>
         <p>
           Girls and boys from U09 through U19. Two tryout windows — register

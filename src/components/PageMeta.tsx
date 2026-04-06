@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_NAME = "West Sacramento Futbol Club";
+const SITE_NAME = "West Sacramento Soccer Club Competitive Program";
 const SITE_URL = "https://westsacramentofc.org";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/wsfc.webp`;
 

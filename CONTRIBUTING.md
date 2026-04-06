@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for contributing to the West Sacramento Futbol Club website.
+Thanks for contributing to the West Sacramento Soccer Club Competitive Program website.
 
 ## Development Setup
 

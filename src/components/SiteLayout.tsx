@@ -33,10 +33,11 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
         <NavLink to="/" className="font-display font-black italic tracking-[-0.05em] text-primary text-[1.3rem] no-underline flex items-center gap-2">
           <img
             src="/wsfc.webp"
-            alt="West Sacramento FC"
+            alt="West Sacramento SC"
             className="h-8 w-auto block"
           />
-          <span className="m-0 text-[1.3rem]">WEST SACRAMENTO FC</span>
+          <span className="m-0 text-[1.3rem] md:hidden">WSSC : COMPETITIVE PROGRAM</span>
+          <span className="m-0 text-[1.3rem] hidden md:block">WEST SACRAMENTO SC : COMPETITIVE PROGRAM</span>
         </NavLink>
 
         <nav aria-label="Main navigation" className="hidden md:flex gap-1 items-center">
@@ -65,7 +66,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
 
       <footer className="bg-surface-low pt-8 pb-6 px-6 text-center grid gap-1.5 mb-[5.5rem] md:mb-0">
         <p className="m-0 text-[0.65rem] font-bold tracking-[0.15em] uppercase text-on-surface-variant">
-          &copy; 2026 West Sacramento Futbol Club
+          &copy; 2026 West Sacramento Soccer Club Competitive Program
         </p>
       </footer>
 

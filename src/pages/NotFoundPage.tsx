@@ -6,7 +6,7 @@ export default function NotFoundPage() {
     <>
       <PageMeta
         title="Page Not Found"
-        description="The page you are looking for does not exist on the West Sacramento Futbol Club site."
+        description="The page you are looking for does not exist on the West Sacramento Soccer Club Competitive Program site."
       />
       <section className="bg-surface-lowest rounded-2xl p-5 sm:p-7" aria-labelledby="not-found-title">
         <header className="mb-4">

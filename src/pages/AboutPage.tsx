@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <PageMeta
         title="About"
-        description="Learn about West Sacramento FC — our mission, values, and Board of Directors."
+        description="Learn about WSSC : Competitive Program — our mission, values, and Board of Directors."
       />
 
       {/* Hero */}
@@ -15,7 +15,7 @@ export default function AboutPage() {
         <h1 id="about-title">
           About
           <br />
-          West Sacramento FC.
+          WSSC : Competitive Program
         </h1>
         <p>
           A community-driven club dedicated to player development, competitive

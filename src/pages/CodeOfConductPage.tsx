@@ -5,7 +5,7 @@ export default function CodeOfConductPage() {
   return (
     <DriveEmbedPage
       title="Code of Conduct"
-      description="Review the official West Sacramento Futbol Club code of conduct."
+      description="Review the official West Sacramento Soccer Club Competitive Program code of conduct."
       docId={DRIVE_DOCS.codeOfConduct.id}
     />
   );

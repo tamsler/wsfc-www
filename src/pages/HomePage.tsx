@@ -33,7 +33,7 @@ export default function HomePage() {
     <>
       <PageMeta
         title="Home"
-        description="West Sacramento FC competitive program overview, dates, and quick access to tryouts, fees, and team information."
+        description="West Sacramento Soccer Club Competitive Program overview, dates, and quick access to tryouts, fees, and team information."
       />
 
       {/* Hero */}
@@ -72,9 +72,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why WSFC */}
-      <section aria-label="Why choose West Sacramento FC">
-        <h3 className="section-heading">Why Families Choose WSFC</h3>
+      {/* Why WSSC */}
+      <section aria-label="Why choose WSSC">
+        <h3 className="section-heading">Why Families Choose WSSC</h3>
         <div className="grid gap-[0.65rem] grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
           {whyItems.map((item) => (
             <div key={item.title} className="bg-surface-low rounded-2xl p-4 text-on-surface flex flex-col gap-2.5 transition-colors hover:bg-surface">

@@ -33,6 +33,7 @@ Thanks for contributing to the West Sacramento Futbol Club website.
   - `/fees`
   - `/coaches`
   - `/code-of-conduct`
+  - `/about`
   - `/fields`
 
 ## Pull Request Checklist

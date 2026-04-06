@@ -10,7 +10,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution workflow, TypeScript con
 - TypeScript
 - Tailwind CSS with custom design tokens
 - React Router for routing
-- react-markdown for markdown-driven page content
 - Cloudflare Pages static hosting
 - GitHub as source-control and deployment origin
 
@@ -21,6 +20,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution workflow, TypeScript con
 - /fees
 - /coaches
 - /code-of-conduct
+- /about
 - /fields
 
 Legacy compatibility redirect:
@@ -29,14 +29,12 @@ Legacy compatibility redirect:
 
 ## Content Model
 
-Markdown-backed pages are stored in src/content:
+Page content is defined directly in TypeScript page components under `src/pages/`.
+Structured data such as coach rosters and board members live in `src/data/`.
 
-- home.md
-- tryouts.md
-- fees.md
-- coaches.md
-
-Code of Conduct and Fields are rendered as embedded Google Drive documents with a fallback link that opens each document in a new tab.
+Code of Conduct and Fields are rendered as embedded Google Drive documents
+(configured in `src/data/driveDocs.ts`) with a fallback link that opens each
+document in a new tab.
 
 ## Local Development
 
@@ -88,4 +86,5 @@ Code of Conduct and Fields are rendered as embedded Google Drive documents with 
 
 ## Content Updates
 
-To update text content for markdown-backed pages, edit files in src/content and redeploy.
+To update page text, edit the relevant component in `src/pages/`.
+To update structured data (coaches, board members, Drive doc URLs), edit the corresponding file in `src/data/` and redeploy.

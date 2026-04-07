@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <PageMeta
         title="About"
-        description="Learn about WSSC : Competitive Program — our mission, values, and Board of Directors."
+        description="Learn about WSSC : Competitive Program — our mission, values, and Competitive Program Committee."
       />
 
       {/* Hero */}
@@ -23,14 +23,13 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Board of Directors */}
+      {/* Competitive Program Committee */}
       <section aria-labelledby="board-heading">
-        <h3 id="board-heading" className="section-heading">Board of Directors</h3>
+        <h3 id="board-heading" className="section-heading">Competitive Program Committee</h3>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[0.65rem] mb-4">
           {boardMembers.map((member) => (
-            <article key={member.role} className="bg-surface-low rounded-xl py-3.5 px-4 grid gap-[0.45rem]">
+            <article key={member.name} className="bg-surface-low rounded-xl py-3.5 px-4 grid gap-[0.45rem]">
               <p className="m-0 font-bold text-[0.95rem] leading-tight">{member.name}</p>
-              <p className="m-0 text-[0.85rem] text-on-surface-variant">{member.role}</p>
             </article>
           ))}
         </div>

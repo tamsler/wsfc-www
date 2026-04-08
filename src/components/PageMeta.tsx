@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const SITE_NAME = "West Sacramento Soccer Club Competitive Program";
 const SITE_URL = "https://westsaccompsoccer.org";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/wsfc.webp`;
+const DEFAULT_OG_IMAGE = `${SITE_URL}/wssc.webp`;
 
 function setMetaTag(content: string, property: string, attr: "name" | "property" = "name") {
   const selector = `meta[${attr}="${property}"]`;

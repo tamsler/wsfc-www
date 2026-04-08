@@ -32,7 +32,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
       <header className="fixed top-0 inset-x-0 z-50 bg-surface/78 backdrop-blur-xl shadow-[0_1px_0_rgba(186,12,0,0.07)] px-6 py-3.5 flex justify-between items-center" role="banner">
         <NavLink to="/" className="font-display font-black italic tracking-[-0.05em] text-primary text-[1.3rem] no-underline flex items-center gap-2">
           <img
-            src="/wsfc.webp"
+            src="/wssc.webp"
             alt="West Sacramento SC"
             className="h-8 w-auto block"
           />

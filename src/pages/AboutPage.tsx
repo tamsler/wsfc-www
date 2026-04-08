@@ -53,7 +53,7 @@ export default function AboutPage() {
         <h3 id="contact-heading" className="section-heading">Contact</h3>
         <div className="bg-surface-low rounded-xl py-3.5 px-4 inline-flex gap-2 items-center">
           <span className="material-symbols-outlined">mail</span>
-          <a href="mailto:doc@westsacramentofc.org">doc@westsacramentofc.org</a>
+          <a href="mailto:doc@westsaccompsoccer.org">doc@westsaccompsoccer.org</a>
         </div>
       </section>
     </>

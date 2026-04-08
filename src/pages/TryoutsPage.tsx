@@ -72,7 +72,7 @@ export default function TryoutsPage() {
           >
             2026 Tryouts Registration
           </a>
-          <a className="btn-hero-ghost" href="mailto:doc@westsacramentofc.org">
+          <a className="btn-hero-ghost" href="mailto:doc@westsaccompsoccer.org">
             Questions? Email Us
           </a>
         </div>

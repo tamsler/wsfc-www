@@ -9,7 +9,7 @@ const included = [
 ];
 
 const paymentPlan = [
-  { due: "At registration", amount: "$80" },
+  { due: "At registration", amount: "$85" },
   { due: "July 1", amount: "$50" },
   { due: "August 1", amount: "$50" },
   { due: "September 1", amount: "$50" },
@@ -27,7 +27,7 @@ export default function FeesPage() {
 
       {/* Hero */}
       <section className="hero" aria-labelledby="fees-title">
-        <p className="hero-eyebrow">2025 / 2026 Season</p>
+        <p className="hero-eyebrow">2026 / 2027 Season</p>
         <h1 id="fees-title">
           Program
           <br />
@@ -45,9 +45,9 @@ export default function FeesPage() {
         <div className="bg-surface-lowest rounded-2xl p-5 grid gap-4">
           <div className="flex justify-between items-start">
             <div>
-              <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-secondary m-0 mb-1">2025 / 2026 Season</p>
+              <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-secondary m-0 mb-1">2026 / 2027 Season</p>
               <h3 className="m-0 font-display font-bold text-[2.5rem] tracking-[-0.02em]">
-                $330
+                $335
               </h3>
             </div>
             <span className="text-[0.6rem] font-bold uppercase tracking-[0.08em] px-[0.6rem] py-[0.2rem] rounded-full whitespace-nowrap bg-secondary/10 text-secondary">Per Player</span>
@@ -78,7 +78,7 @@ export default function FeesPage() {
             </div>
             <div className="flex items-center gap-3 text-on-surface-variant text-[0.875rem] font-medium">
               <span className="material-symbols-outlined text-primary text-[1.1rem] shrink-0">payments</span>
-              <span>One payment of <strong>$330</strong> at registration</span>
+              <span>One payment of <strong>$335</strong> at registration</span>
             </div>
           </div>
 
@@ -139,7 +139,7 @@ export default function FeesPage() {
                 <span className="material-symbols-outlined text-primary text-[1.2rem]">apparel</span>
               </div>
               <div>
-                <h4 className="m-0 mb-1 font-bold text-[0.9rem]">Purchased Separately — ~$120 + shipping</h4>
+                <h4 className="m-0 mb-1 font-bold text-[0.9rem]">Purchased Separately: $190 + shipping</h4>
                 <p className="m-0 text-[0.825rem] text-on-surface-variant leading-relaxed">
                   The uniform kit is not included in the registration fee.
                   Typical kit includes three jerseys, two shorts, and two pairs

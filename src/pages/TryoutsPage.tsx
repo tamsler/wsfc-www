@@ -39,7 +39,7 @@ const prepItems = [
   {
     icon: "checkroom",
     title: "What to Wear",
-    body: "Bring both a light and a dark training shirt. Label all personal gear.",
+    body: "Wear a light-colored training shirt. Label all personal gear.",
   },
 ];
 

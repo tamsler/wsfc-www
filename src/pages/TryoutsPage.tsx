@@ -117,6 +117,54 @@ export default function TryoutsPage() {
         </p>
       </section>
 
+      {/* Schedule */}
+      <section aria-label="Tryout schedule">
+        <h3 className="section-heading">Schedule</h3>
+        <div className="bg-surface-lowest rounded-2xl overflow-hidden">
+          {/* Header row */}
+          <div className="grid grid-cols-3 px-5 py-2.5 bg-primary/8">
+            <p className="m-0 text-[0.65rem] font-bold tracking-[0.1em] uppercase text-primary">Age Group</p>
+            <p className="m-0 text-[0.65rem] font-bold tracking-[0.1em] uppercase text-primary">Gender</p>
+            <p className="m-0 text-[0.65rem] font-bold tracking-[0.1em] uppercase text-primary">Time</p>
+          </div>
+          {/* U9–U12 row */}
+          <div className="grid grid-cols-3 items-center px-5 py-4 border-b border-surface-highest">
+            <div className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-secondary text-[1rem] shrink-0">sports_soccer</span>
+              <span className="font-display font-bold text-[0.95rem]">U9 – U12</span>
+            </div>
+            <span className="text-[0.875rem] text-on-surface-variant font-medium">Girls &amp; Boys</span>
+            <div className="flex items-center gap-2 text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">schedule</span>
+              5:30 PM – 6:45 PM
+            </div>
+          </div>
+          {/* U13–U14 row */}
+          <div className="grid grid-cols-3 items-center px-5 py-4">
+            <div className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-secondary text-[1rem] shrink-0">sports_soccer</span>
+              <span className="font-display font-bold text-[0.95rem]">U13 – U14</span>
+            </div>
+            <span className="text-[0.875rem] text-on-surface-variant font-medium">Girls &amp; Boys</span>
+            <div className="flex items-center gap-2 text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">schedule</span>
+              6:45 PM – 8:00 PM
+            </div>
+          </div>
+        </div>
+        <p className="mt-3 text-[0.8rem] text-on-surface-variant">
+          <a
+            href="/age-group-chart-2026-27.webp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1"
+          >
+            <span className="material-symbols-outlined text-[1rem]">open_in_new</span>
+            View the US Club Soccer age group chart (2026–27)
+          </a>
+        </p>
+      </section>
+
       {/* Location */}
       <section aria-label="Tryout location">
         <h3 className="section-heading">Location</h3>

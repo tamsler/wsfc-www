@@ -120,32 +120,94 @@ export default function TryoutsPage() {
       {/* Schedule */}
       <section aria-label="Tryout schedule">
         <h3 className="section-heading">Schedule</h3>
-        <div className="bg-surface-lowest rounded-2xl overflow-hidden">
+        {/* Mobile: stacked cards */}
+        <div className="grid gap-3 sm:hidden">
+          {/* U9–U12 card */}
+          <div className="bg-surface-lowest rounded-2xl p-4">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="material-symbols-outlined text-secondary text-[1.1rem]">sports_soccer</span>
+              <span className="font-display font-bold text-lg">U9 – U12</span>
+              <span className="ml-auto text-[0.65rem] font-bold tracking-[0.08em] uppercase bg-secondary/10 text-secondary px-2 py-0.5 rounded-full">Girls &amp; Boys</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-surface-low rounded-xl p-3">
+                <p className="m-0 text-[0.6rem] font-bold uppercase tracking-[0.08em] text-on-surface-variant mb-1">Dates</p>
+                <div className="flex items-center gap-1.5 text-[0.875rem] font-semibold">
+                  <span className="material-symbols-outlined text-primary text-[1rem]">calendar_today</span>
+                  May 12 – 14
+                </div>
+              </div>
+              <div className="bg-surface-low rounded-xl p-3">
+                <p className="m-0 text-[0.6rem] font-bold uppercase tracking-[0.08em] text-on-surface-variant mb-1">Time</p>
+                <div className="flex items-center gap-1.5 text-[0.875rem] font-semibold">
+                  <span className="material-symbols-outlined text-primary text-[1rem]">schedule</span>
+                  5:30 – 6:45 PM
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* U13–U14 card */}
+          <div className="bg-surface-lowest rounded-2xl p-4">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="material-symbols-outlined text-secondary text-[1.1rem]">sports_soccer</span>
+              <span className="font-display font-bold text-lg">U13 – U14</span>
+              <span className="ml-auto text-[0.65rem] font-bold tracking-[0.08em] uppercase bg-secondary/10 text-secondary px-2 py-0.5 rounded-full">Girls &amp; Boys</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-surface-low rounded-xl p-3">
+                <p className="m-0 text-[0.6rem] font-bold uppercase tracking-[0.08em] text-on-surface-variant mb-1">Dates</p>
+                <div className="flex items-center gap-1.5 text-[0.875rem] font-semibold">
+                  <span className="material-symbols-outlined text-primary text-[1rem]">calendar_today</span>
+                  May 12 – 14
+                </div>
+              </div>
+              <div className="bg-surface-low rounded-xl p-3">
+                <p className="m-0 text-[0.6rem] font-bold uppercase tracking-[0.08em] text-on-surface-variant mb-1">Time</p>
+                <div className="flex items-center gap-1.5 text-[0.875rem] font-semibold">
+                  <span className="material-symbols-outlined text-primary text-[1rem]">schedule</span>
+                  6:45 – 8:00 PM
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop: table layout */}
+        <div className="hidden sm:block bg-surface-lowest rounded-2xl overflow-hidden">
           {/* Header row */}
-          <div className="grid grid-cols-3 px-5 py-2.5 bg-primary/8">
+          <div className="grid grid-cols-4 px-5 py-2.5 bg-primary/8">
             <p className="m-0 text-[0.65rem] font-bold tracking-[0.1em] uppercase text-primary">Age Group</p>
             <p className="m-0 text-[0.65rem] font-bold tracking-[0.1em] uppercase text-primary">Gender</p>
+            <p className="m-0 text-[0.65rem] font-bold tracking-[0.1em] uppercase text-primary">Dates</p>
             <p className="m-0 text-[0.65rem] font-bold tracking-[0.1em] uppercase text-primary">Time</p>
           </div>
           {/* U9–U12 row */}
-          <div className="grid grid-cols-3 items-center px-5 py-4 border-b border-surface-highest">
+          <div className="grid grid-cols-4 items-center px-5 py-4 border-b border-surface-highest">
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-secondary text-[1rem] shrink-0">sports_soccer</span>
               <span className="font-display font-bold text-[0.95rem]">U9 – U12</span>
             </div>
             <span className="text-[0.875rem] text-on-surface-variant font-medium">Girls &amp; Boys</span>
             <div className="flex items-center gap-2 text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">calendar_today</span>
+              May 12 – 14
+            </div>
+            <div className="flex items-center gap-2 text-[0.875rem] font-medium">
               <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">schedule</span>
               5:30 PM – 6:45 PM
             </div>
           </div>
           {/* U13–U14 row */}
-          <div className="grid grid-cols-3 items-center px-5 py-4">
+          <div className="grid grid-cols-4 items-center px-5 py-4">
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-secondary text-[1rem] shrink-0">sports_soccer</span>
               <span className="font-display font-bold text-[0.95rem]">U13 – U14</span>
             </div>
             <span className="text-[0.875rem] text-on-surface-variant font-medium">Girls &amp; Boys</span>
+            <div className="flex items-center gap-2 text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">calendar_today</span>
+              May 12 – 14
+            </div>
             <div className="flex items-center gap-2 text-[0.875rem] font-medium">
               <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">schedule</span>
               6:45 PM – 8:00 PM

@@ -104,17 +104,6 @@ export default function TryoutsPage() {
             </div>
           ))}
         </div>
-        <p className="mt-3 text-[0.8rem] text-on-surface-variant">
-          Exact team schedule published one week before tryouts. See the{" "}
-          <a
-            href="https://usclubsoccer.org/registration-player-age-groups"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            US Club Soccer age group chart
-          </a>{" "}
-          to confirm your player&apos;s group.
-        </p>
       </section>
 
       {/* Schedule */}

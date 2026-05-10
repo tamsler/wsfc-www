@@ -159,6 +159,54 @@ export default function TryoutsPage() {
               </div>
             </div>
           </div>
+          {/* U15–U19 Girls card */}
+          <div className="bg-surface-lowest rounded-2xl p-4">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="material-symbols-outlined text-secondary text-[1.1rem]">sports_soccer</span>
+              <span className="font-display font-bold text-lg">U15 – U19</span>
+              <span className="ml-auto text-[0.65rem] font-bold tracking-[0.08em] uppercase bg-secondary/10 text-secondary px-2 py-0.5 rounded-full">Girls</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-surface-low rounded-xl p-3">
+                <p className="m-0 text-[0.6rem] font-bold uppercase tracking-[0.08em] text-on-surface-variant mb-1">Dates</p>
+                <div className="flex items-center gap-1.5 text-[0.875rem] font-semibold">
+                  <span className="material-symbols-outlined text-primary text-[1rem]">calendar_today</span>
+                  May 19 – 21
+                </div>
+              </div>
+              <div className="bg-surface-low rounded-xl p-3">
+                <p className="m-0 text-[0.6rem] font-bold uppercase tracking-[0.08em] text-on-surface-variant mb-1">Time</p>
+                <div className="flex items-center gap-1.5 text-[0.875rem] font-semibold">
+                  <span className="material-symbols-outlined text-primary text-[1rem]">schedule</span>
+                  5:30 – 7:00 PM
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* U15–U19 Boys card */}
+          <div className="bg-surface-lowest rounded-2xl p-4">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="material-symbols-outlined text-secondary text-[1.1rem]">sports_soccer</span>
+              <span className="font-display font-bold text-lg">U15 – U19</span>
+              <span className="ml-auto text-[0.65rem] font-bold tracking-[0.08em] uppercase bg-secondary/10 text-secondary px-2 py-0.5 rounded-full">Boys</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-surface-low rounded-xl p-3">
+                <p className="m-0 text-[0.6rem] font-bold uppercase tracking-[0.08em] text-on-surface-variant mb-1">Dates</p>
+                <div className="flex items-center gap-1.5 text-[0.875rem] font-semibold">
+                  <span className="material-symbols-outlined text-primary text-[1rem]">calendar_today</span>
+                  May 19 – 21
+                </div>
+              </div>
+              <div className="bg-surface-low rounded-xl p-3">
+                <p className="m-0 text-[0.6rem] font-bold uppercase tracking-[0.08em] text-on-surface-variant mb-1">Time</p>
+                <div className="flex items-center gap-1.5 text-[0.875rem] font-semibold">
+                  <span className="material-symbols-outlined text-primary text-[1rem]">schedule</span>
+                  6:30 – 8:00 PM
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Desktop: table layout */}
@@ -187,7 +235,7 @@ export default function TryoutsPage() {
             </div>
           </div>
           {/* U13–U14 row */}
-          <div className="grid grid-cols-4 items-center px-5 py-4">
+          <div className="grid grid-cols-4 items-center px-5 py-4 border-b border-surface-highest">
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-secondary text-[1rem] shrink-0">sports_soccer</span>
               <span className="font-display font-bold text-[0.95rem]">U13 – U14</span>
@@ -200,6 +248,38 @@ export default function TryoutsPage() {
             <div className="flex items-center gap-2 text-[0.875rem] font-medium">
               <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">schedule</span>
               6:45 PM – 8:00 PM
+            </div>
+          </div>
+          {/* U15–U19 Girls row */}
+          <div className="grid grid-cols-4 items-center px-5 py-4 border-b border-surface-highest">
+            <div className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-secondary text-[1rem] shrink-0">sports_soccer</span>
+              <span className="font-display font-bold text-[0.95rem]">U15 – U19</span>
+            </div>
+            <span className="text-[0.875rem] text-on-surface-variant font-medium">Girls</span>
+            <div className="flex items-center gap-2 text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">calendar_today</span>
+              May 19 – 21
+            </div>
+            <div className="flex items-center gap-2 text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">schedule</span>
+              5:30 PM – 7:00 PM
+            </div>
+          </div>
+          {/* U15–U19 Boys row */}
+          <div className="grid grid-cols-4 items-center px-5 py-4">
+            <div className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-secondary text-[1rem] shrink-0">sports_soccer</span>
+              <span className="font-display font-bold text-[0.95rem]">U15 – U19</span>
+            </div>
+            <span className="text-[0.875rem] text-on-surface-variant font-medium">Boys</span>
+            <div className="flex items-center gap-2 text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">calendar_today</span>
+              May 19 – 21
+            </div>
+            <div className="flex items-center gap-2 text-[0.875rem] font-medium">
+              <span className="material-symbols-outlined text-primary text-[1rem] shrink-0">schedule</span>
+              6:30 PM – 8:00 PM
             </div>
           </div>
         </div>

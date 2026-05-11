@@ -1,22 +1,18 @@
-export type Coach = {
-  name: string;
-  year: string;
-  gender: "Girls" | "Boys";
-  color: "Red" | "Blue";
+export type AgeGroupCoaches = {
+  ageGroup: string;
+  boys: string;
+  girls: string;
 };
 
-export const coaches: Coach[] = [
-  { name: "Brent Billings", year: "2016", gender: "Girls", color: "Red" },
-  { name: "Loren Edgell", year: "2016", gender: "Boys", color: "Red" },
-  { name: "Craig Fergason", year: "2016", gender: "Boys", color: "Blue" },
-  { name: "Steve Macias", year: "2015", gender: "Girls", color: "Red" },
-  { name: "Becky Unwin", year: "2014", gender: "Girls", color: "Red" },
-  { name: "Dominique Forrester", year: "2014", gender: "Boys", color: "Red" },
-  { name: "Greg Federico", year: "2014", gender: "Boys", color: "Blue" },
-  { name: "Leodan Villasenor", year: "2013", gender: "Girls", color: "Red" },
-  { name: "Memo Villegas Jr", year: "2013", gender: "Boys", color: "Red" },
-  { name: "Guadalupe Garcia", year: "2012", gender: "Girls", color: "Red" },
-  { name: "Jesse Melgoza", year: "2011", gender: "Boys", color: "Red" },
-  { name: "Memo Villegas Sr", year: "2010", gender: "Boys", color: "Red" },
-  { name: "Rico Novoa", year: "2007/2008", gender: "Boys", color: "Red" },
+export const coaches: AgeGroupCoaches[] = [
+  { ageGroup: "U9", boys: "Thomas Amsler", girls: "Alberto Salais, Zach Tuss" },
+  { ageGroup: "U10", boys: "Thomas Amsler", girls: "Brent Billings" },
+  { ageGroup: "U11", boys: "Alex Vukasinovic, Loren Edgell", girls: "Steven Macias, Brent Billings" },
+  { ageGroup: "U12", boys: "Greg Federico", girls: "David Lee" },
+  { ageGroup: "U13", boys: "Dominique Forrester", girls: "Leodan Villasenor" },
+  { ageGroup: "U14", boys: "Memo Villegas Jr", girls: "Rico Novoa" },
+  { ageGroup: "U15", boys: "Jesse Melgoza", girls: "Guadalupe Garcia" },
+  { ageGroup: "U16", boys: "Memo Villegas Sr", girls: "TBD" },
+  { ageGroup: "U17", boys: "Memo Villegas Sr., Charlie Becerra", girls: "TBD" },
+  { ageGroup: "U19", boys: "TBD", girls: "TBD" },
 ];

@@ -7,7 +7,7 @@ export type AgeGroupCoaches = {
 export const coaches: AgeGroupCoaches[] = [
   { ageGroup: "U9", boys: "Thomas Amsler", girls: "Alberto Salais, Zach Tuss" },
   { ageGroup: "U10", boys: "Thomas Amsler", girls: "TBD" },
-  { ageGroup: "U11", boys: "Alex Vukasinovic, Loren Edgell", girls: "Brent Billings" },
+  { ageGroup: "U11", boys: "Alex Vukasinovic", girls: "Brent Billings" },
   { ageGroup: "U12", boys: "Greg Federico", girls: "Steven Macias" },
   { ageGroup: "U13", boys: "Dominique Forrester", girls: "Leodan Villasenor" },
   { ageGroup: "U14", boys: "Memo Villegas Jr", girls: "Rico Novoa" },

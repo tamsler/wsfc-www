@@ -1,6 +1,7 @@
 import PageMeta from "../components/PageMeta";
 
 import { boardMembers, technicalStaff } from "../data/board";
+import { DRIVE_DOCS, buildDriveViewUrl } from "../data/driveDocs";
 
 export default function AboutPage() {
   return (
@@ -46,6 +47,21 @@ export default function AboutPage() {
               <p className="m-0 text-[0.85rem] text-on-surface-variant">{member.role}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      {/* Bylaws */}
+      <section aria-labelledby="bylaws-heading">
+        <h3 id="bylaws-heading" className="section-heading">Bylaws</h3>
+        <div className="bg-surface-low rounded-xl py-3.5 px-4 inline-flex gap-2 items-center">
+          <span className="material-symbols-outlined">description</span>
+          <a
+            href={buildDriveViewUrl(DRIVE_DOCS.bylaws.id)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            West Sacramento Futbol Club Bylaws
+          </a>
         </div>
       </section>
 

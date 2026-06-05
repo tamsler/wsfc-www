@@ -19,31 +19,33 @@ export default function DriveEmbedPage({
   return (
     <>
       <PageMeta title={title} description={description} />
-      <section className="bg-surface-lowest rounded-2xl p-5 sm:p-7" aria-labelledby={headingId}>
-        <header className="mb-4">
-          <h1 id={headingId} className="m-0 mb-1 font-display font-bold text-2xl sm:text-[2rem] tracking-[-0.02em] uppercase">{title}</h1>
-          <p className="m-0 text-[0.9rem] text-on-surface-variant mb-4">
-            If the embedded document does not load due to permissions, open it
-            in a new tab.
-          </p>
-          <a
-            className="btn-surface"
-            href={viewUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open Document in New Tab
-          </a>
-        </header>
+      <section className="max-w-[680px] md:max-w-[900px] mx-auto px-5 w-full animate-fade-in-up" aria-labelledby={headingId}>
+        <div className="bg-surface-lowest rounded-2xl p-5 sm:p-7 border border-outline-variant/60 shadow-sm">
+          <header className="mb-4">
+            <h1 id={headingId} className="m-0 mb-1 font-display font-bold text-2xl sm:text-[2rem] tracking-[-0.02em] uppercase text-on-surface">{title}</h1>
+            <p className="m-0 text-[0.9rem] text-on-surface-variant mb-4">
+              If the embedded document does not load due to permissions, open it
+              in a new tab.
+            </p>
+            <a
+              className="btn-surface"
+              href={viewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Document in New Tab
+            </a>
+          </header>
 
-        <div className="rounded-xl overflow-hidden bg-surface-low mt-4">
-          <iframe
-            src={previewUrl}
-            title={`${title} document preview`}
-            className="w-full min-h-[72vh] border-0"
-            loading="lazy"
-            allow="autoplay"
-          />
+          <div className="rounded-xl overflow-hidden bg-surface-low mt-4 border border-outline-variant">
+            <iframe
+              src={previewUrl}
+              title={`${title} document preview`}
+              className="w-full min-h-[72vh] border-0"
+              loading="lazy"
+              allow="autoplay"
+            />
+          </div>
         </div>
       </section>
     </>

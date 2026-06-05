@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #ba0c00;
-  --color-primary-container: #e02a16;
-  --color-on-primary: #ffffff;
-  --color-secondary: #2e5ab5;
-  --color-secondary-container: #779efd;
-  --color-on-secondary: #ffffff;
-  --color-surface: #fcf9f8;
-  --color-surface-lowest: #ffffff;
-  --color-surface-low: #f6f3f2;
-  --color-surface-container: #f0eded;
-  --color-surface-high: #eae7e7;
-  --color-surface-highest: #e5e2e1;
-  --color-on-surface: #1b1b1b;
-  --color-on-surface-variant: #5d3f3a;
-  --color-outline-variant: rgba(230, 189, 182, 0.35);
-  --color-primary-fixed: #ffdad4;
-  --color-on-primary-fixed-variant: #920700;
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary: var(--on-primary);
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary: var(--on-secondary);
+  --color-surface: var(--surface);
+  --color-surface-lowest: var(--surface-lowest);
+  --color-surface-low: var(--surface-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-high: var(--surface-high);
+  --color-surface-highest: var(--surface-highest);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-outline-variant: var(--outline-variant);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-on-primary-fixed-variant: var(--on-primary-fixed-variant);
 
   --font-sans: "Inter", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
+}
+
+:root {
+  --primary: #ba0c00;
+  --primary-container: #e02a16;
+  --on-primary: #ffffff;
+  --secondary: #2e5ab5;
+  --secondary-container: #779efd;
+  --on-secondary: #ffffff;
+  --surface: #fcf9f8;
+  --surface-lowest: #ffffff;
+  --surface-low: #f6f3f2;
+  --surface-container: #f0eded;
+  --surface-high: #eae7e7;
+  --surface-highest: #e5e2e1;
+  --on-surface: #1b1b1b;
+  --on-surface-variant: #5d3f3a;
+  --outline-variant: rgba(230, 189, 182, 0.35);
+  --primary-fixed: #ffdad4;
+  --on-primary-fixed-variant: #920700;
+}
+
+.dark {
+  --primary: #ff4d3d;
+  --primary-container: #820800;
+  --on-primary: #ffffff;
+  --secondary: #5d8eff;
+  --secondary-container: #1b3d8a;
+  --on-secondary: #ffffff;
+  
+  --surface: #0a0908;
+  --surface-lowest: #141211;
+  --surface-low: #1c1a19;
+  --surface-container: #262321;
+  --surface-high: #302c2a;
+  --surface-highest: #3b3633;
+  --on-surface: #f4f0ed;
+  --on-surface-variant: #c0b4b2;
+  --outline-variant: rgba(255, 255, 255, 0.08);
+  --primary-fixed: #ffdad4;
+  --on-primary-fixed-variant: #ba0c00;
 }
 
 * {
@@ -40,6 +81,7 @@
     color: var(--color-on-surface);
     background: var(--color-surface);
     -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   a {
@@ -81,10 +123,14 @@
 .hero {
   background: linear-gradient(150deg, #7a0700 0%, #ba0c00 55%, #d92010 100%);
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-  padding: clamp(2rem, 6vw, 3rem) 1.5rem clamp(3rem, 9vw, 4.5rem);
-  margin: -1.25rem -1.25rem 0;
+  padding: clamp(3rem, 7vw, 4.5rem) 1.5rem clamp(4rem, 10vw, 6rem);
   position: relative;
   overflow: hidden;
+  width: 100%;
+}
+
+.dark .hero {
+  background: linear-gradient(150deg, #300200 0%, #5c0500 50%, #7d0800 100%);
 }
 
 .hero::before {
@@ -104,6 +150,10 @@
   z-index: 0;
 }
 
+.dark .hero::after {
+  opacity: 0.12;
+}
+
 .hero > * {
   position: relative;
   z-index: 1;
@@ -117,7 +167,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.65);
   position: relative;
 }
 
@@ -125,7 +175,7 @@
   margin: 0 0 0.75rem;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.6rem, 9vw, 4.5rem);
+  font-size: clamp(2.8rem, 9vw, 5rem);
   line-height: 0.95;
   letter-spacing: -0.025em;
   text-transform: uppercase;
@@ -135,10 +185,10 @@
 
 .hero p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   max-width: 42ch;
-  line-height: 1.55;
+  line-height: 1.6;
   position: relative;
 }
 
@@ -153,7 +203,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -162,7 +212,7 @@
 
 .hero-date-row .material-symbols-outlined {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .hero-actions {
@@ -173,21 +223,70 @@
   position: relative;
 }
 
+/* ── Interactive Cards & Animations ────────────── */
+
+.card-interactive {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), 
+              box-shadow 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), 
+              border-color 0.3s ease, 
+              background-color 0.3s ease;
+  border: 1px solid var(--outline-variant);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.01);
+}
+
+.card-interactive:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary-container);
+  box-shadow: 0 12px 24px -8px rgba(186, 12, 0, 0.15), 0 4px 12px -4px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-surface-lowest);
+}
+
+.dark .card-interactive:hover {
+  box-shadow: 0 12px 28px -8px rgba(255, 77, 61, 0.2), 0 4px 16px -4px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
 @layer components {
   .btn-hero-primary {
-    @apply inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white text-primary shadow-md hover:-translate-y-px hover:shadow-lg transition-all;
+    @apply inline-flex items-center justify-center gap-1.5 px-6 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white text-primary shadow-md hover:-translate-y-px hover:shadow-lg transition-all duration-200 cursor-pointer;
   }
 
   .btn-hero-ghost {
-    @apply inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white/15 text-white hover:bg-white/25 transition-colors;
+    @apply inline-flex items-center justify-center gap-1.5 px-6 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-white/12 text-white hover:bg-white/20 transition-all duration-200 cursor-pointer;
   }
 
   .btn-solid {
-    @apply inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-primary text-white shadow-md hover:-translate-y-px hover:shadow-lg transition-all no-underline;
+    @apply inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-primary text-white shadow-md hover:-translate-y-px hover:shadow-lg transition-all duration-200 no-underline cursor-pointer;
   }
 
   .btn-surface {
-    @apply inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-surface-high text-on-surface hover:bg-surface-highest transition-colors no-underline;
+    @apply inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-xl font-sans font-bold text-xs tracking-widest uppercase bg-surface-high text-on-surface hover:bg-surface-highest transition-colors duration-200 no-underline cursor-pointer;
   }
 
   .section-heading {

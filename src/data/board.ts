@@ -13,4 +13,6 @@ export const boardMembers: BoardMember[] = [
 
 export const technicalStaff: BoardMember[] = [
   { role: "Director of Coaching", name: "Thomas Amsler" },
+  { role: "Boys Technical Director", name: "Richard Novoa" },
+  { role: "Girls Technical Director", name: "Leodan Villasenor" },
 ] satisfies BoardMember[];

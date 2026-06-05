@@ -62,7 +62,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
         Skip to main content
       </a>
 
-      <header className="fixed top-0 inset-x-0 z-50 bg-surface/78 backdrop-blur-xl shadow-[0_1px_0_rgba(186,12,0,0.07)] px-6 py-3.5 flex justify-between items-center" role="banner">
+      <header className="fixed top-0 inset-x-0 z-50 bg-surface/78 backdrop-blur-xl border-b border-outline-variant px-6 py-3.5 flex justify-between items-center" role="banner">
         <NavLink to="/" className="font-display font-black italic tracking-[-0.04em] text-primary text-[0.825rem] min-[400px]:text-[0.95rem] sm:text-[1.15rem] md:text-[1.3rem] no-underline flex items-center gap-2 shrink-0">
           <img
             src="/wsfc.webp"
@@ -147,7 +147,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
         </div>
       </header>
 
-      <main id="main-content" className="pt-[4.25rem] pb-24 md:pb-12 grid gap-6 md:gap-8 min-h-[calc(100vh-4.25rem)]">
+      <main id="main-content" className="pt-[3.75rem] pb-24 md:pb-12 grid gap-6 md:gap-8 min-h-[calc(100vh-3.75rem)]">
         {children}
       </main>
 
